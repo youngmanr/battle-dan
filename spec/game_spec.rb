@@ -1,9 +1,9 @@
 require './lib/game'
 
 describe Game do
-	subject(:game) {described_class.new}
 	let(:dave) {double :player}
-	let(:mittens) {double :player}
+  let(:mittens) {double :player}
+  subject(:game) {described_class.new(dave, mittens)}
 
   describe '#attack' do
     it 'damage the player' do
