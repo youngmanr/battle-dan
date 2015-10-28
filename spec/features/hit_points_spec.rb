@@ -1,5 +1,5 @@
-feature 'Enter names' do
-  scenario 'submitting names' do
+feature 'Hit Points' do
+  scenario 'Display Player 2 Hit Points' do
     sign_in_and_play
     expect(page).to have_content 'Mittens: 60HP'
   end
