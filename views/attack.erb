@@ -1,2 +1,2 @@
-<%= @game.player_1.name %> attacked <%= @game.player_2.name %>
-<a href="/play">OK</a>
+<div><%= @game.to_be_attacked.name %> attacked <%= @game.attacker.name %></div>
+<div><a href="/play">OK</a></div>
