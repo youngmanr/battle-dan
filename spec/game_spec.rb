@@ -32,7 +32,8 @@ describe Game do
 
   describe '#switch_turn' do
     it 'switches attacker to player 2' do
-      game.switch_turn
+      allow(mittens).to receive(:receive_damage)
+      game.attack(mittens)
       expect(game.attacker).to eq mittens
     end
   end

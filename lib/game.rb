@@ -10,14 +10,16 @@ class Game
 
 	def attack(player)
     player.receive_damage
+    switch_turn
   end
 
+private
   def switch_turn
   	if attacker == player_1
-			@attacker = player_2 
+			@attacker = player_2
 			@to_be_attacked = player_1
 		else
-			@attacker = player_1 
+			@attacker = player_1
 			@to_be_attacked = player_2
 		end
   end
